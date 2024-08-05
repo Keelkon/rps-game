@@ -52,17 +52,22 @@ let computerScore = 0;
         (humanChoice === "paper" && computerChoice === "rock")
     ){
         console.log("You win!");
+        // add 1 to human score
+        humanScore++;
     } else if (
         (computerChoice === "rock" && humanChoice === "scissors") ||
         (computerChoice === "scissors" && humanChoice === "paper") ||
         (computerChoice === "paper" && humanChoice === "rock")
     ){
         console.log("Shucks, the computers are smarter than you!");
+        // add 1 to computer score
+        computerScore++;
     } else {
         console.log("Oopsies try again!");
     }
-    console.log(humanChoice);
-    console.log(computerChoice);
+    // Display the updated scores
+    console.log(`Human Score: ${humanScore}`);
+    console.log(`Computer Score: ${computerScore}`);
  }
 
 
