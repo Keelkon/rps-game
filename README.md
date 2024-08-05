@@ -18,9 +18,9 @@ I have found doing these before and after thoughts for the projects helps me und
 * Using the Dev Tools to work through bugs/errors in the code.
 * Overall getting comfortable with programming and using JavaScript. 
 
-Learning JS so far has definitely been the most challenging part of the course for me so far. It is the most different from anything I have ever done or dealt with in my past and has forced me to work on how I think more than anything else. I have enjoyed learning it so far but there are many more moments of compelete confusion and feelings of brain dead than I had with either HTML or CSS. 
+Learning JS has definitely been the most challenging part of the course for me so far. It is the most different from anything I have ever done or dealt with in my past and has forced me to work on how I think more than anything else. I have enjoyed learning it so far but there are many more moments of compelete confusion and feelings of brain dead than I had experienced with either HTML or CSS. 
 
-I must admit that creating this project and staring at the blank JS file is very intimidating and I already feel a bit lost. But my experience with the other projects has shown me that taking my time and working through it bit by bit will instill confidence and defintelly cement the foundational understanding of the lessons I have learned so far. 
+I must admit that creating this project and staring at the blank JS file is very intimidating and I already feel a bit lost. But my experience with the other projects has shown me that taking my time and working through it bit by bit will instill confidence and definitely cement the foundational understanding of the lessons I have learned so far. 
 
 ## After Thoughts:
 
