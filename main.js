@@ -1,6 +1,6 @@
-// function to get random choice of rock paper or scissors from computer
+// Function to get random choice of rock paper or scissors from computer
 function getComputerChoice (){
-    //Creates an array of choices
+    // Creates an array of choices
     const choice = ["Rock", "Paper", "Scissors"];
    
     // Generates a random index based on the length of the array (0-2). 
@@ -13,7 +13,7 @@ function getComputerChoice (){
     return choice[randomChoice];
 }
 
-//function obtains the human users choice for the game
+// Function obtains the human users choice
 function getHumanChoice (){
     // Creates prompt for the user to enter a choice
     const input = prompt(" Are you throwing Rock, Paper, or Scissors?"); 
@@ -33,13 +33,13 @@ function getHumanChoice (){
     }
 }
 
-
+// Declare score variables globally so playRound and playGame can access them
 let humanScore = 0;
 let computerScore = 0;
 
-
+// Function to play a single round
  function playRound (humanChoice, computerChoice) {
-      // Convert both choices to lowercase for case-insensitive comparison
+    // Convert both choices to lowercase for case-insensitive comparison
     humanChoice = humanChoice.toLowerCase();
     computerChoice = computerChoice.toLowerCase();
 
@@ -52,16 +52,14 @@ let computerScore = 0;
         (humanChoice === "paper" && computerChoice === "rock")
     ){
         console.log("You win!");
-        // add 1 to human score
-        humanScore++;
+        humanScore++; // add 1 to human score
     } else if (
         (computerChoice === "rock" && humanChoice === "scissors") ||
         (computerChoice === "scissors" && humanChoice === "paper") ||
         (computerChoice === "paper" && humanChoice === "rock")
     ){
         console.log("Shucks, the computers are smarter than you!");
-        // add 1 to computer score
-        computerScore++;
+        computerScore++; // add 1 to computer score
     } else {
         console.log("Oopsies try again!");
     }
@@ -70,10 +68,18 @@ let computerScore = 0;
     console.log(`Computer Score: ${computerScore}`);
  }
 
+ // Function to play the game
+function playGame (){
+    // Prompt for choices and play a round
+    const humanSelection = getHumanChoice(); //prompt user and choice
+    const computerSelection = getComputerChoice(); // randomly select choice 
 
- const humanSelection = getHumanChoice();
- const computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection); // Pass choices to the function
+}
 
-
- playRound(humanSelection, computerSelection);
-
+// Call playGame multiple times to simulate 5 rounds
+playGame();
+playGame();
+playGame();
+playGame();
+playGame();
